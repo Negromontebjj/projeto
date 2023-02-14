@@ -1,0 +1,18 @@
+<h2> {{ hero.name | uppercase }} Details</h2>
+<div>
+  <span>id: </span>{{hero.id}}
+</div>
+<div>
+  <span>Name: </span>{{hero.name}}
+</div>
+<div>
+  <span>idade: </span>{{hero.idade}}
+</div>
+
+
+
+<!--Two Way dataabase o hero.name assim que alterado no input, ele tambem altera no H2-->
+<div>
+  <label for="name">Hero Name : </label>
+  <input type="text" [(ngModel)]="hero.name" placeholder="Name" id="name">
+</div>
